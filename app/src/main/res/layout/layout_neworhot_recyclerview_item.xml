@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/title_text_color">
+
+    <ImageView
+        android:id="@+id/neworhot_recycleview_img_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/neworhot_recycleview_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="123"
+            android:textColor="@color/basic_text_color"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/neworhot_recycleview_price_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="价格"
+                android:textColor="@color/basic_text_color"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/neworhot_recycleview_like_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="多少人喜欢"
+                android:textColor="@color/discount_text_color"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <com.qiang.manicurists.view.RoundImageView
+                android:id="@+id/neworhot_recycleview_craftsmen_img_id"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_launcher"
+                app:type="circle"/>
+
+            <TextView
+                android:id="@+id/neworhot_recycleview_craftsmen_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手艺人"
+                android:textColor="@color/discount_text_color"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/neworhot_recycleview_craftsmen_rated_id"
+                android:layout_width="50dp"
+                android:layout_height="7dp"
+                android:scaleType="fitEnd"
+                android:src="@mipmap/star10" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

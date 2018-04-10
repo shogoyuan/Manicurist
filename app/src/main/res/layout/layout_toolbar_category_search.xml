@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_toolbar_id"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorToolBarBG2"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:contentInsetStart="0dp">
+
+
+    <LinearLayout
+        android:id="@+id/category_search_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/snapshot_panel"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/aliwx_friends_search_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/click_to_search"
+            android:textColor="@color/basic_text_color"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

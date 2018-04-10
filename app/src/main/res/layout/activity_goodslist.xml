@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiang.manicurists.activity.NewOrHotActivity">
+
+    <include layout="@layout/layout_toolbar_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qiang.manicurists.view.LoadMoreRecyclerView
+            android:id="@+id/goodslist_recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include android:id="@+id/goodslist_top_radiogroup_id"
+            layout="@layout/layout_goodslist_headerview"/>
+    </RelativeLayout>
+</LinearLayout>

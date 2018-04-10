@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--home界面的toolbar背景颜色-->
+    <color name="colorToolBarBG">#000000</color>
+    <!--goods界面的toolbar背景颜色-->
+    <color name="colorToolBarBG1">#000001</color>
+    <!--其他不用随滑动隐藏的toolbar背景颜色-->
+    <color name="colorToolBarBG2">#000002</color>
+
+    <color name="colorSearchBG">#FFFFFF</color>
+
+    <color name="sky_background">#228FC1</color>
+
+    <color name="loading_text_color">#000000</color>
+    <color name="basic_text_color">#000000</color>
+    <color name="price_text_color">#ffd700</color>
+    <color name="discount_text_color">#b9b1b1</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="main_bg_color">#FFFFFF</color>
+    <color name="basic_bg_color">#f4f4f4</color>
+    <color name="home_goods_1_color">#000000</color>
+
+    <!--morphingbutton的默认颜色-->
+    <color name="mb_white">#ffffff</color>
+    <color name="mb_blue">#ff0099cc</color>
+    <color name="mb_blue_dark">#ff00719b</color>
+    <color name="mb_purple">#ffaa66cc</color>
+    <color name="mb_purple_dark">#ff8855aa</color>
+    <color name="mb_green">#ff99cc00</color>
+    <color name="mb_green_dark">#ff6d9b00</color>
+    <color name="mb_red">#ffff4444</color>
+    <color name="mb_red_dark">#ffcd3a3a</color>
+    <color name="mb_gray">#ffdedede</color>
+
+    <!--morphingbutton的使用参数颜色-->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <dimen name="mb_corner_radius_2">2dp</dimen>
+    <dimen name="mb_corner_radius_4">4dp</dimen>
+    <dimen name="mb_width_100">100dp</dimen>
+    <dimen name="mb_width_120">120dp</dimen>
+    <dimen name="mb_width_200">200dp</dimen>
+    <dimen name="mb_height_56">56dp</dimen>
+    <dimen name="mb_height_8">8dp</dimen>
+    <dimen name="mb_height_4">4dp</dimen>
+    <integer name="mb_animation">500</integer>
+    <string name="mb_button">Button</string>
+    <!--morphingbutton的使用参数颜色-->
+</resources>

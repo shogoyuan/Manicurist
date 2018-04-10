@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic_bg_color"
+    android:orientation="vertical"
+    tools:context="com.qiang.manicurists.activity.NewOrHotActivity">
+
+    <include layout="@layout/layout_toolbar_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qiang.manicurists.view.LoadMoreRecyclerView
+            android:id="@+id/neworhot_recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <!--用一个头部view来卡位置-->
+        <include
+            android:id="@+id/neworhot_top_radiogroup_id"
+            layout="@layout/layout_neworhot_headerview" />
+
+
+            <LinearLayout
+                android:id="@+id/neworhot_loading_linear_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@color/title_text_color">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/image_loading_16x9"/>
+                <ImageView
+                    android:id="@+id/neworhot_loading_anim_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/anim_dataload_loading2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

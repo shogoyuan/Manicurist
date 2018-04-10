@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qiang.manicurists.fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.qiang.manicurists.view.PullToRefreshView
+        android:id="@+id/home_pulltorefreshview_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.qiang.manicurists.view.MyScrollView
+                android:id="@+id/home_scrollview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/basic_bg_color"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_home_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+
+                    <GridView
+                        android:id="@+id/home_gridview_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/bg_top_tab_bar"
+                        android:numColumns="4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_tab_bar_2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/promotions_text"
+                            android:textColor="@color/basic_text_color"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="30dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/home_promotions_img1_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/ic_launcher" />
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@mipmap/my_tejia"
+                                    android:layout_alignRight="@+id/home_promotions_img1_id"
+                                    android:layout_marginRight="10dp"/>
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/home_promotions_img2_id"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/ic_launcher" />
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@mipmap/my_tejia"
+                                        android:layout_alignRight="@+id/home_promotions_img2_id"
+                                        android:layout_marginRight="10dp"/>
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/home_promotions_img3_id"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/ic_launcher" />
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@mipmap/my_tejia"
+                                        android:layout_alignRight="@+id/home_promotions_img3_id"
+                                        android:layout_marginRight="10dp"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/home_goods_linear_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </com.qiang.manicurists.view.MyScrollView>
+
+            <include
+                layout="@layout/layout_toolbar_home_search" />
+        </RelativeLayout>
+    </com.qiang.manicurists.view.PullToRefreshView>
+</FrameLayout>
